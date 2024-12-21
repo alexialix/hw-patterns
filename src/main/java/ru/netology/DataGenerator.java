@@ -9,7 +9,7 @@ import java.util.Locale;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class DataGenerator {
-    private static final Faker faker = new Faker(new Locale("ru"));  // Создаем один экземпляр Faker для всех методов
+    private static final Faker faker = new Faker(new Locale("ru"));
 
     private DataGenerator() {
     }
@@ -25,11 +25,11 @@ public class DataGenerator {
     }
 
     public static String generateName() {
-        return faker.name().fullName();  // Используем один экземпляр Faker
+        return faker.name().fullName();
     }
 
     public static String generatePhone() {
-        return faker.phoneNumber().phoneNumber();  // Используем один экземпляр Faker
+        return faker.phoneNumber().phoneNumber();
     }
 
     public static class Registration {
